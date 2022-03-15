@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulario</title>
+	<style>
+	input[type=text], input[type=pasword]{
+    width: 30%;
+    padding: 5px;
+    margin: 8px 0;
+    border: 1px solid #FFE0E1;
+    border-radius: 10px
+			}
+input[type=submit]{
+				width: 10%;
+				padding: 5px;
+				border-radius: 10px;
+				background-color: lightcoral;
+				cursor: pointer
+			}
+input[type=text]:focus{border: 1px solid #AF494B}
+input[type=submit]:hover{
+				background-color: antiquewhite;
+				
+			}
+#textarea{width: 50%;
+			height: 100px;
+			padding: 12px 20px;
+			border-radius: 10px;
+			border: 1px solid #F7B3B4;}
+	</style>
+<link href="CSS/estilo.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/aladin:n4:default;annie-use-your-telescope:n4:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<header><h1>Formulario en HTML</h1></header>
+<nav>
+	<ul> <li><a href="listas.html">Listas</a></li>
+		  <li><a href="tabla 4.html">Tablas</a></li>
+		  <li><a href="enlaces.html">Enlaces</a></li>
+		  <li><a href="imagen.html">Imagenes</a></li>
+		<li><a href="index.html">Formato de texto</a></li>
+		<li><a href="VIDEO.html">Video</a></li>
+	<li><a href="tipografias.html">Fuentes</a></li>
+	<li><a href="Formularios.html">Formularios</a></li>
+	</ul>
+	</nav>
+<main>
+  <section><h2>Formulario de ingreso o autentificacion</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat rem ducimus, saepe modi incidunt, accusamus recusandae, officia sed natus eligendi, necessitatibus quisquam corporis quaerat molestias? Nobis ad quidem voluptas, dicta ipsa, ea ratione molestiae neque ullam quam tenetur a autem error dolorum cupiditate corrupti qui ducimus. Voluptatum qui, excepturi quidem!</p>
+	  <form action="procesamiento.html" method="get">
+	  <label>Usuario:</label>
+		 <input name="Usuario" type="text"><br>
+		  <label>Contrasena</label>
+		  <input type="password" id="contraseña" name="contraseña">
+		
+	    <input type="submit" class="input" value="Enviar">
+	  </form>
+  </section>
+  <section>
+    <h2>Formulario entrevista</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat rem ducimus, saepe modi incidunt, accusamus recusandae, officia sed natus eligendi, necessitatibus quisquam corporis quaerat molestias? Nobis ad quidem voluptas, dicta ipsa, ea ratione molestiae neque ullam quam tenetur a autem error dolorum cupiditate corrupti qui ducimus. Voluptatum qui, excepturi quidem!</p>
+    <form id="form1" name="form1" method="post">
+      <h3>Encuesta</h3>
+      <label for="number">Edad:</label>
+      <input name="number" type="number" id="number" max="50" min="18">
+      <p>
+       <label>Cual es tu genero</label><br> <label>
+          <input type="radio" name="Genero" value="femenino" id="Genero_0">
+          Femenino</label>
+        <br>
+        <label>
+          <input type="radio" name="Genero" value="masculino" id="Genero_1">
+          Masculino</label>
+        <br>
+      </p>
+     <label>¿Que genero es tu favorito?</label> 
+		<table width="200">
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Musica" value="rock" id="Musica_0">
+            Rock</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Musica" value="pop" id="Musica_1">
+            Pop</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Musica" value="jaz" id="Musica_2">
+            Jaz</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Musica" value="salsa" id="Musica_3">
+            Salsa</label></td>
+        </tr>
+
+      </table><br>
+		<label>De que pais eres</label><br>
+		<select>
+		   <option>Mexico</option>
+		   <option>España</option>
+		   <option>Italia</option>
+		   <option>Argentina</option>
+		   <option>Chile</option>
+	  </select><br> <br>
+    </form>
+	  <input type="submit" formaction="procesamiento.html">
+  </section>
+  <section>
+    <h2>Formulario de Comentario&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat rem ducimus, saepe modi incidunt, accusamus recusandae, officia sed natus eligendi, necessitatibus quisquam corporis quaerat molestias? Nobis ad quidem voluptas, dicta ipsa, ea ratione molestiae neque ullam quam tenetur a autem error dolorum cupiditate corrupti qui ducimus. Voluptatum qui, excepturi quidem!</p>
+    <form id="form2" name="form2" method="post">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+      <br><br>
+      <label for="texarea">Comentario:</label>
+      <textarea name="textarea" id="textarea"></textarea>
+    </form>
+    <br>
+    <input type="submit" name="submite2" id="submit2" value="Enviar">
+  </section>
+  <section>
+    <h2>Formulario de 10 preguntas</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat rem ducimus, saepe modi incidunt, accusamus recusandae, officia sed natus eligendi, necessitatibus quisquam corporis quaerat molestias? Nobis ad quidem voluptas, dicta ipsa, ea ratione molestiae neque ullam quam tenetur a autem error dolorum cupiditate corrupti qui ducimus. Voluptatum qui, excepturi quidem!</p>
+    <form action="procesamiento.html" method="get">
+	  <label>1. Nombre:</label><br>
+		  <input type="text"><br><br>
+	  <label>2. Cel:</label>  <input type="tel"><br><br>
+	  <label>3. Fecha de nacimiento:</label> <input type="date" max="2022-012-031" min="2000-01-01"><br><br>
+	  <label>4. Color favorito:</label><input type="color" value="#FF0004"><br><br>
+		<label>5. Email:</label><input type="email"><br>
+	  <p>
+	  <label>6. ¿A que hora sueles ver peliculas?</label> <input type="time"><br><br>
+		  <label>7. ¿Cual pelicula animada te gusta mas?</label><br> <label>
+		    <input type="checkbox" name="Pelicula animada favorita" value="encanto" id="Peliculaanimadafavorita_0">
+		    Encanto</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="Pelicula animada favorita" value="luca" id="Peliculaanimadafavorita_1">
+		    Luca</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="Pelicula animada favorita" value="toy story" id="Peliculaanimadafavorita_2">
+		    Toy story</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="Pelicula animada favorita" value="monsters inc" id="Peliculaanimadafavorita_3">
+		    Monsters Inc</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="Pelicula animada favorita" value="coco" id="Peliculaanimadafavorita_4">
+		    Coco</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="Pelicula animada favorita" value="sing" id="Peliculaanimadafavorita_5">
+		    Sing</label>
+		  <br>
+	  </p>
+	 <label>8. ¿Cual es tu genero de pelicula favorito?</label> <p>
+	    <label>
+	      <input type="radio" name="Genero " value="drama" id="Genero_2">
+	      Drama</label>
+	    <br>
+	    <label>
+	      <input type="radio" name="Genero " value="terror" id="Genero_3">
+	      Terror</label>
+	    <br>
+	    <label>
+	      <input type="radio" name="Genero " value="comica" id="Genero_4">
+	      Comica</label>
+	    <br>
+	    <label>
+	      <input type="radio" name="Genero " value="accion" id="Genero_5">
+	      Accion</label>
+	    <br>
+	    <label>
+	      <input type="radio" name="Genero " value="fantasia" id="Genero_6">
+	      Fantasia</label>
+	    <br>
+      </p>
+		<label>9. ¿Cual pelicula romantica te gusta mas?</label><br>
+		<select>
+		  <option>One day</option>
+		  <option>Diario de una pasion</option>
+		  <option>A dos metros de ti</option>
+		  <option>Yo antes de ti</option>
+		  <option>La la land</option>
+		</select><br><br>
+ <label>10. ¿Cual es tu pelicula slasher favorita?</label> <p>
+		  <label>
+		    <input type="checkbox" name="slasher" value="la masacre de texas" id="slasher_0">
+		    La masacre de texas</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="slasher" value="la calle del terror" id="slasher_1">
+		    La calle del terror</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="slasher" value="halloween" id="slasher_2">
+		    Halloween</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="slasher" value="los extraños" id="slasher_3">
+		    Los extraños</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="slasher" value="viernes 13" id="slasher_4">
+		    Viernes 13</label>
+		  <br>
+</p><input type="submit">
+</section>
+</main>
+<footer><h4>Eleborado por Yareni Merino Lopez</h4></footer>
+</body>
+</html>
