@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tablas</title>
+	<style type="text/css">
+		h2{color: darkslateblue}
+		header,nav,main,footer{margin: 0 auto;}
+		header{height: 100px;
+			width:1024px;
+			background-color:darkturquoise;
+			padding:20px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		table,th,td{
+			border-radius:10px;
+			padding: 10px;
+		}
+		nav{
+    height: 150px;
+    width: 1024px;
+    background-color: #197375;
+    box-sizing: border-box;
+    padding-top: 0.5px;
+		}
+		main{
+			width: 1024px;
+			height: 1600px;
+			background-color:#A7E5E6;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		section{
+			background-color:#F0FEFE;
+			color: #00008B;
+			width: 860px;
+			height: 500px;
+			padding: 20px;
+			margin: 20px auto;
+			box-sizing:border-box;
+		}
+		footer{
+			margin: 0 auto;
+			text-align: center;}
+		
+		th{background-color: aqua}
+		td{background-color: aliceblue}
+		
+	nav ul li {
+    list-style-type: none;
+    width: 150px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: aliceblue;
+    margin-top: 10px;
+    padding: 10px;
+    height: 20px;
+    text-align: center;
+    box-sizing: content-box;}
+  
+		nav ul li a{  text-decoration: none;
+a:link{
+			color: darkgreen;
+		}
+		a:visited{
+			color: crimson;
+		}
+		a:hover{
+			color:blueviolet;
+			background-color: azure;
+		}
+		a:active{color: coral;}}
+    </style>
+</head>
+	
+<body>
+	<header><h1 style="color: aliceblue"> Tablas en HTML</h1></header>
+	<nav>
+	  <ul>
+	    <li><a href="listas.html">Listas</a></li>
+		  <li><a href="tabla 4.html">Tablas</a></li>
+		  <li><a href="enlaces.html">Enlaces</a></li>
+		  <li><a href="index.html">Formato de texto</a></li>
+		  <li><a href="imagen.html">Imagenes</a></li>
+		     <li><a href="Audio.html">Audio</a></li>
+		<li><a href="VIDEO.html">Video</a></li>
+	   <li><a href="Formularios.html">Formularios</a></li>
+	    <li><a href="tipografias.html">Fuentes</a></li>
+      </ul>
+	</nav>
+<main>
+  <section>
+		<h2>Tabla simple</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, fugit quis quos accusantium alias odit expedita optio libero eum eaque!</p>
+		<table border="1" style="border-collapse: collapse;border-radius: 0px;">
+		<thead>
+			<tr> 
+			<th style="border-radius:0px;">Matricula</th>
+				<th style="border-radius:0px;">Nombre</th>
+				<th style="border-radius:0px;">Email</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr> 
+				<td style="border-radius:0px;">2018646464</td>
+				<td style="border-radius:0px;">Yareni merino</td>
+				<td style="border-radius:0px;">yareni.merino@gmail.com</td>
+				</tr>
+				<tr>
+					<td style="border-radius:0px;">20185436363</td>
+					<td style="border-radius:0px;">Maria Hernandez</td>
+					<td style="border-radius:0px;">maria.her@gmail.com</td>
+				</tr>
+				<tr>
+					<td>2018646464</td>
+					<td>Sofia Mendez</td>
+					<td>sofia.men@gmail.com</td>
+				</tr>
+			</tbody>
+			<footer></footer>
+		</table>
+		
+		</section>
+  <section>
+	  <h2>Tabla simple con bordes contraidos</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, fugit quis quos accusantium alias odit expedita optio libero eum eaque!</p>
+	  <table border="1">
+	    <thead>
+	      <tr>
+	        <th>Matricula</th>
+	        <th>Nombre</th>
+	        <th>Email</th>
+          </tr>
+        </thead>
+	    <tbody>
+	      <tr>
+	        <td>2018646464</td>
+	        <td>Yareni merino</td>
+	        <td>yareni.merino@gmail.com</td>
+          </tr>
+	      <tr>
+	        <td>20185436363</td>
+	        <td>Maria Hernandez</td>
+	        <td>maria.her@gmail.com</td>
+          </tr>
+	      <tr>
+	        <td>2018646464</td>
+	        <td>Sofia Mendez</td>
+	        <td>sofia.men@gmail.com</td>
+          </tr>
+        </tbody>
+	    <footer></footer>
+      </table>
+  </section>
+  <section>
+	  <h2>Tabla 3</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, fugit quis quos accusantium alias odit expedita optio libero eum eaque!</p>
+	  <table border="1" style="border-color: blue;width: 50%; height: 200px;border-spacing: 10px;">
+	    <thead>
+	      <tr>
+	        <th style="width: 200px">Matricula</th>
+	        <th colspan="3" style="height: 100px; width: : 500px">Nombre</th>
+	        <th style="width:200px;">Email</th>
+          </tr>
+        </thead>
+	    <tbody>
+	      <tr>
+	        <td>2018646464</td>
+	        <td>Yareni</td>
+			  <td>Merino</td>
+			  <td>Lopez</td>
+	        <td>yareni.merino@gmail.com</td>
+          </tr>
+	      <tr>
+	        <td>20185436363</td>
+	        <td>Maria</td>
+			  <td>Hernandez</td>
+			  <td>Rico</td>
+	        <td>maria.her@gmail.com</td>
+          </tr>
+	      <tr>
+	        <td>2018646464</td>
+	        <td>Sofia</td>
+			  <td>Mendez</td>
+			  <td>Rosa</td>
+	        <td>sofia.men@gmail.com</td>
+          </tr>
+        </tbody>
+	    <footer></footer>
+      </table>
+  </section>
+</main>
+	<footer><h5>Elaborado por yareni merino lópez</h5></footer>
+</body>
+</html>
