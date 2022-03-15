@@ -1,0 +1,123 @@
+@import url("../../webfonts/Englebert_Regular/stylesheet.css");
+/* CSS Document */
+header{
+	background-color:#F8CDE0;color:#D67371;text-align: center;height: 100px;padding:10px;margin: auto
+}
+footer{background-color:#F8CDE0;color: #D67371;font-size: 12px;height: 50px;padding: 10px;text-align: center;}
+h2{
+    color: #6A638C;
+    text-shadow: 0px 0px #CD7274;
+}
+main {background-color: #D67371;height: auto;padding: 20px}
+section{background-color: #F8CDE0;padding: 30px;width: 80%;height: 50%;margin-left: auto;margin-right: auto;margin-bottom: 20px;margin-top: 20px;}
+nav {background-color:#6A638C;padding: 30px; }
+header,nav,main,footer {margin: auto;}
+#img_1 {height: auto;width: 25%;margin: 30px;border-left: 10px solid #D67371;border-right: 5px solid #D67371;border-bottom: 20px solid #D67371; border-top: 5px solid #D67371;
+}
+.imagen_1 {
+    width: 22%;
+    padding: 10px;
+    height: 22%;
+}
+#filter_gris {
+    filter: grayscale(100%);
+}
+#filter_blur {
+    filter: blur(5px);
+}
+#filter_brillo {
+    filter: brightness(150%);
+}
+#filter_contraste {
+    filter: contrast(150%);
+}
+#filter_opacidad {
+    filter: opacity(50%);
+}
+#filter_saturacion {
+    filter: saturation(180%);
+}
+#filter_sepia {
+    filter: sepia(100%);
+}
+nav ul li {
+    list-style-type: none;
+    width: 150px;
+    display: inline-block;
+    background-color: #F8CDE0;
+    margin: 15px;
+    padding: 10px;
+    height: 20px;
+    text-align: center;
+    box-sizing: content-box;}
+  
+		nav ul li a{  text-decoration: none;
+        a:link{
+			color: darkgreen;
+		}
+		a:visited{
+			color: crimson;
+		}
+		a:hover{
+			color:blueviolet;
+			background-color:#F8CDE0;
+		}
+		a:active{color: coral;}
+			.size_video {
+    width: 30%;
+    height: auto;
+}
+#form1 {
+    width: 50%;
+}
+#form1 label {
+    font-weight: bold;
+    margin: 10;
+    padding: 10px;
+    font-size: 14px;
+}
+input[type=text], input[type=pasword]{
+    width: 30%;
+    padding: 5px;
+    margin: 8px 0;
+    border: 1px solid #FFE0E1;
+    border-radius: 10px
+			}
+input[type=submit]{
+				width: 10%;
+				padding: 5px;
+				border-radius: 10px;
+				background-color: lightcoral;
+				cursor: pointer
+			}
+input[type=text]:focus{border: 1px solid #AF494B}
+input[type=submit]:hover{
+				background-color: antiquewhite;
+				
+			}
+#textarea{width: 50%;
+			height: 100px;
+			padding: 12px 20px;
+			border-radius: 10px;
+			border: 1px solid #F7B3B4;}
+.fuentet2 {
+    font-family: aladin;
+    font-style: normal;
+    font-weight: 400;
+}
+.p1 {
+    font-family: annie-use-your-telescope;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+}
+.fuente_file {
+    font-family: "Englebert Regular";
+}
+.h3 {font-family: "Pacífico & display=swap"
+}
+.h1 {
+    text-shadow: -4px 1px 9px #C8B4EA;
+}
+.animate__slow {
+}
